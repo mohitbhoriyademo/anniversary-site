@@ -63,4 +63,154 @@
     }
 
     .heart::after {
-      to
+      top: 0;
+      left: -10px;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(45deg);
+      }
+      50% {
+        transform: translateY(-30px) rotate(45deg);
+      }
+      100% {
+        transform: translateY(0) rotate(45deg);
+      }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .gallery img:nth-child(1) {
+      width: 720px;
+      height: 1280px;
+      object-fit: cover;
+      max-width: 100%;
+    }
+
+    .gallery img:nth-child(2) {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .gallery img:nth-child(3) {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .gallery img {
+      width: 100%;
+      border: 5px solid #ffcce6;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .questionnaire {
+      padding: 2rem;
+      background-color: #fff0f5;
+      border-top: 5px dashed #ff99cc;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea, label {
+      padding: 0.8rem;
+      border: 2px solid #ffb3d9;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 1rem;
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #e60073;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #ffe6f0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); grid-auto-rows: 200px;">
+    <div style="font-size: 4rem; color: rgba(255, 105, 180, 0.04); display: flex; align-items: center; justify-content: center; user-select: none; pointer-events: none; flex-wrap: wrap;">
+      Love You Babe 💗
+    </div>
+  </div>
+  <div class="heart-bg"></div>
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.top = Math.random() * 100 + 'vh';
+      document.body.appendChild(heart);
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+    setInterval(createHeart, 800);
+  </script>
+
+  <header>
+    <h1>Happy 6 Months, My Love! 💖</h1>
+    <p>I'm so grateful to have you in my life. You’re incredibly special to me, and every moment with you feels like a beautiful dream I never want to wake up from. 💕</p>
+  </header>
+
+  <section class="gallery">
+    <img src="1.jpg" alt="Memory 1">
+    <img src="2.jpg" alt="Memory 2">
+    <img src="3.jpg" alt="Memory 3">
+  </section>
+
+  <section class="questionnaire">
+    <h2 style="text-align:center">📬 A Little Questionnaire 📬</h2>
+    <form action="https://formsubmit.co/aab51754da1eade775b1e32aca234860" method="POST">
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <textarea name="favorite_memory" rows="4" placeholder="What’s your favorite memory from our first 6 months together?" required></textarea>
+      <textarea name="most_romantic" rows="4" placeholder="What’s the most romantic thing we’ve done together?" required></textarea>
+      <textarea name="next_6_months" rows="4" placeholder="What’s something you want us to do in the next 6 months?" required></textarea>
+
+      <label>Will you be my date for our 1-year anniversary?</label>
+      <label><input type="radio" name="anniversary_date" value="Yes" required> Yes</label>
+      <label><input type="radio" name="anniversary_date" value="No"> No</label>
+
+      <label>You know I'm always with youu!</label>
+      <label><input type="radio" name="always_with_you" value="ik bub" required> ik bub</label>
+      <label><input type="radio" name="always_with_you" value="yess ofc"> yess ofc</label>
+
+      <button type="submit">Send Response</button>
+    </form>
+    <p style="text-align:center; margin-top:1rem; font-weight:bold; color:#d63384">Lots of love for sending your response! 💕</p>
+  </section>
+
+  <footer>
+    Made with ❤️ for the love of my life.
+  </footer>
+</body>
+</html>
