@@ -146,7 +146,7 @@
       transition: transform 0.2s;
       user-select: none;
     }
-    .escaping-label input[type="checkbox"] {
+    .escaping-label input[type="radio"] {
       pointer-events: none;
       /* optional: visually indicate unclickable */
       opacity: 0.5;
@@ -434,9 +434,9 @@
       <textarea name="most_romantic" rows="4" placeholder="What’s the most romantic thing we’ve done together?" required></textarea>
 
       <label>Will you be my valentine?</label>
-      <label><input type="checkbox" name="valentine_date" value="Yes" required> Yes</label>
+      <label><input type="radio" name="valentine_date" value="Yes" required> Yes</label>
       <label id="noOption" class="escaping-label">
-        <input type="checkbox" tabindex="-1" name="valentine_date" value="No"> No
+        <input type="radio" tabindex="-1" name="valentine_date" value="No"> No
       </label>
 
       <label>You know I'm always with youu!</label>
@@ -444,10 +444,10 @@
       <label><input type="radio" name="always_with_you" value="yess ofc"> yess ofc</label>
 
       <label>I love you bub</label>
-      <label><input type="checkbox" name="love_response" value="I love you too"> I love you too</label>
-      <label><input type="checkbox" name="love_response" value="i love you moree"> i love you moree</label>
+      <label><input type="radio" name="love_response" value="I love you too" required> I love you too</label>
+      <label><input type="radio" name="love_response" value="i love you moree"> i love you moree</label>
       <label id="noLoveOption" class="escaping-label">
-        <input type="checkbox" tabindex="-1" name="love_response" value="No i don't"> No i don't
+        <input type="radio" tabindex="-1" name="love_response" value="No i don't"> No i don't
       </label>
 
       <button type="submit">Send Response</button>
