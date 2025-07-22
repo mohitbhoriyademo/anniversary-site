@@ -138,6 +138,43 @@
       background: #ffe6f0;
       font-size: 0.9rem;
     }
+    /* For the escaping 'No' option */
+    .escaping-label {
+      position: relative !important;
+      display: inline-block !important;
+      cursor: pointer !important;
+      transition: transform 0.2s;
+      user-select: none;
+    }
+    .escaping-label input[type="checkbox"] {
+      pointer-events: none;
+      /* optional: visually indicate unclickable */
+      opacity: 0.5;
+    }
+    /* New styles for scrolling reasons list */
+    .reasons-section {
+      padding: 2rem;
+      background-color: #fff0f5;
+      text-align: center;
+    }
+    .reasons-list {
+      max-height: 200px; /* Further reduced height for an even smaller scrolling section */
+      overflow-y: auto;
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 1rem;
+      border: 2px dashed #ff99cc;
+      border-radius: 10px;
+      background-color: #ffffff;
+    }
+    .reasons-list ol {
+      text-align: left;
+      padding-left: 20px;
+    }
+    .reasons-list p {
+      font-style: italic;
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -176,6 +213,216 @@
     <img src="3.jpg" alt="Memory 3">
   </section>
 
+  <!-- New Scrolling Reasons Section -->
+  <section class="reasons-section">
+    <h2>Reasons Why I Love You 💕</h2>
+    <div class="reasons-list">
+      <ol>
+        <li>You always know how to make me smile.</li>
+        <li>Your laughter is contagious.</li>
+        <li>You give the best hugs.</li>
+        <li>The way you listen so sincerely.</li>
+        <li>You inspire me to be a better person.</li>
+        <li>Every moment with you feels special.</li>
+        <li>Your support never wavers.</li>
+        <li>You always believe in me.</li>
+        <li>You’re my favorite adventure.</li>
+        <li>You remember the little things about me.</li>
+        <li>You make ordinary days extraordinary.</li>
+        <li>You’re my safe place.</li>
+        <li>Our inside jokes never get old.</li>
+        <li>You make even boring tasks fun.</li>
+        <li>You’re gentle and caring.</li>
+        <li>You champion my dreams.</li>
+        <li>You respect my opinions.</li>
+        <li>The way your eyes light up when you’re happy.</li>
+        <li>You’re my best friend and partner in crime.</li>
+        <li>You’re not afraid to be silly with me.</li>
+        <li>You’re always honest.</li>
+        <li>You take care of me when I’m sick.</li>
+        <li>You’re the calm to my chaos.</li>
+        <li>You dance with me, even when there’s no music.</li>
+        <li>You surprise me in the sweetest ways.</li>
+        <li>You understand me like no one else.</li>
+        <li>We make a great team.</li>
+        <li>You never judge me.</li>
+        <li>You encourage me to try new things.</li>
+        <li>Your thoughtfulness leaves me speechless.</li>
+        <li>You’re proud of us.</li>
+        <li>You support my family and friends.</li>
+        <li>You’re a great listener.</li>
+        <li>You always know what I need.</li>
+        <li>Your sense of humor makes life better.</li>
+        <li>You are passionate about what you love.</li>
+        <li>You’re genuine.</li>
+        <li>You forgive easily.</li>
+        <li>You’re patient with me.</li>
+        <li>You make sacrifices without hesitation.</li>
+        <li>You always have time for me.</li>
+        <li>You accept my flaws.</li>
+        <li>Your kindness brightens every day.</li>
+        <li>You are always up for an adventure.</li>
+        <li>You’re creative.</li>
+        <li>You encourage my weirdness.</li>
+        <li>You let me be me.</li>
+        <li>You give the warmest cuddles.</li>
+        <li>You trust me.</li>
+        <li>You see the good in everyone.</li>
+        <li>You make me want to celebrate life.</li>
+        <li>You’re affectionate.</li>
+        <li>You motivate me on hard days.</li>
+        <li>You never give up on us.</li>
+        <li>You have the softest heart.</li>
+        <li>You make my heart race.</li>
+        <li>You genuinely care about people.</li>
+        <li>You bring out my confidence.</li>
+        <li>You’re always respectful.</li>
+        <li>You spoil me in the best ways.</li>
+        <li>You never let me feel alone.</li>
+        <li>You tell me I’m beautiful.</li>
+        <li>You share your dreams and fears with me.</li>
+        <li>You see my potential even when I can’t.</li>
+        <li>You challenge me to grow.</li>
+        <li>You’re grateful for small moments.</li>
+        <li>The little notes you leave me.</li>
+        <li>You cheer me up on bad days.</li>
+        <li>You remember our special dates.</li>
+        <li>You know my favorite foods.</li>
+        <li>You sing to me—even off-key!</li>
+        <li>You encourage my hobbies.</li>
+        <li>You make time for us, no matter what.</li>
+        <li>You compliment me sincerely.</li>
+        <li>You’re excited about our future.</li>
+        <li>You fix my insecurities with your words.</li>
+        <li>You hold my hand in public.</li>
+        <li>You value our memories.</li>
+        <li>You share your snacks.</li>
+        <li>You make my favorite coffee just right.</li>
+        <li>You accept my odd habits.</li>
+        <li>You laugh at my jokes—even the bad ones!</li>
+        <li>You believe in love as much as I do.</li>
+        <li>You treat everyone kindly.</li>
+        <li>You tell me “I love you” every day.</li>
+        <li>You’re mindful of my feelings.</li>
+        <li>You plan thoughtful surprises.</li>
+        <li>You encourage me to be myself.</li>
+        <li>You keep our relationship exciting.</li>
+        <li>You celebrate my achievements.</li>
+        <li>You make me feel wanted.</li>
+        <li>You never make me doubt us.</li>
+        <li>You remember what matters to me.</li>
+        <li>Your morning texts brighten my day.</li>
+        <li>You’re my comfort after a tough day.</li>
+        <li>You love my quirks.</li>
+        <li>You challenge me (in a good way!)</li>
+        <li>You give the most loving compliments.</li>
+        <li>You make every kiss feel like the first.</li>
+        <li>You are, and always will be, my favorite person.</li>
+        <li>You light up my world with your smile.</li>
+        <li>Your voice is my favorite sound.</li>
+        <li>You make me feel truly seen.</li>
+        <li>You’re always there to hold my hand.</li>
+        <li>You turn my bad days around.</li>
+        <li>Your empathy is unmatched.</li>
+        <li>You make me laugh until my sides hurt.</li>
+        <li>You’re my biggest cheerleader.</li>
+        <li>You appreciate the simple things.</li>
+        <li>You’re incredibly intelligent.</li>
+        <li>You share my love for lazy Sundays.</li>
+        <li>You make me feel safe and secure.</li>
+        <li>Your hugs feel like home.</li>
+        <li>You’re adventurous and spontaneous.</li>
+        <li>You inspire my creativity.</li>
+        <li>You’re always positive and uplifting.</li>
+        <li>You know how to comfort me perfectly.</li>
+        <li>You’re my partner in every sense.</li>
+        <li>You make every date night magical.</li>
+        <li>Your kindness extends to everyone around us.</li>
+        <li>You’re passionate about our relationship.</li>
+        <li>You surprise me with your thoughtfulness.</li>
+        <li>You’re loyal through and through.</li>
+        <li>You make me want to be more romantic.</li>
+        <li>Your eyes sparkle when you talk about us.</li>
+        <li>You handle challenges with grace.</li>
+        <li>You’re fun-loving and playful.</li>
+        <li>You respect my space when I need it.</li>
+        <li>You’re my go-to for advice.</li>
+        <li>You make mundane moments memorable.</li>
+        <li>You’re always eager to learn new things together.</li>
+        <li>Your confidence is inspiring.</li>
+        <li>You forgive my mistakes without holding grudges.</li>
+        <li>You’re gentle with my heart.</li>
+        <li>You celebrate my small victories.</li>
+        <li>You’re an amazing cook (or at least try!).</li>
+        <li>You share my taste in movies and music.</li>
+        <li>You’re my calm in the storm.</li>
+        <li>You make me feel cherished.</li>
+        <li>Your texts make my day brighter.</li>
+        <li>You’re supportive of my goals.</li>
+        <li>You love animals as much as I do.</li>
+        <li>You’re not afraid to show vulnerability.</li>
+        <li>You plan the best getaways.</li>
+        <li>You’re always honest, even when it’s hard.</li>
+        <li>You make me feel like the luckiest person.</li>
+        <li>Your scent lingers and reminds me of you.</li>
+        <li>You’re creative in solving problems.</li>
+        <li>You encourage my independence.</li>
+        <li>You’re my favorite travel buddy.</li>
+        <li>You know all my secrets and keep them safe.</li>
+        <li>You’re affectionate in the sweetest ways.</li>
+        <li>You make holidays extra special.</li>
+        <li>You’re patient during my rants.</li>
+        <li>You believe in second chances.</li>
+        <li>You’re my muse for everything.</li>
+        <li>You make me excited for the future.</li>
+        <li>Your smile is my weakness.</li>
+        <li>You’re always up for a cuddle session.</li>
+        <li>You value our traditions.</li>
+        <li>You’re wise beyond your years.</li>
+        <li>You make me feel young at heart.</li>
+        <li>You’re my sounding board for ideas.</li>
+        <li>You appreciate my efforts.</li>
+        <li>You’re generous with your time.</li>
+        <li>You make every kiss meaningful.</li>
+        <li>You’re my rock during tough times.</li>
+        <li>You share my sense of wonder.</li>
+        <li>You’re always game for new experiences.</li>
+        <li>Your love feels unconditional.</li>
+        <li>You make me proud to be with you.</li>
+        <li>You’re attentive to my needs.</li>
+        <li>You laugh at yourself, which is adorable.</li>
+        <li>You’re my favorite person to daydream with.</li>
+        <li>You keep our spark alive.</li>
+        <li>You’re thoughtful in your gifts.</li>
+        <li>You make long drives enjoyable.</li>
+        <li>You’re my confidante.</li>
+        <li>You inspire me to stay healthy.</li>
+        <li>You’re always optimistic.</li>
+        <li>You make me feel desired.</li>
+        <li>You’re great at making peace.</li>
+        <li>You share my love for cozy nights in.</li>
+        <li>You’re my biggest fan.</li>
+        <li>You make every “I love you” count.</li>
+        <li>You’re resilient and strong.</li>
+        <li>You notice the details others miss.</li>
+        <li>You’re my happy place.</li>
+        <li>You encourage my passions.</li>
+        <li>You’re fun to tease and be teased by.</li>
+        <li>You make family gatherings better.</li>
+        <li>You’re my forever adventure.</li>
+        <li>You heal my heart with your words.</li>
+        <li>You’re always evolving and growing.</li>
+        <li>You make silence comfortable.</li>
+        <li>You’re the reason I believe in soulmates.</li>
+        <li>You make every day an opportunity for love.</li>
+        <li>Your touch is electric.</li>
+        <li>You’re irreplaceable in my life.</li>
+        <li>You complete me in ways I never knew I needed.</li>
+      </ol>
+      <p>The list is so long that it'll take forever to give every possible reason—because my love for you is infinite! 💖</p>
+    </div>
+  </section>
+
   <!-- Questionnaire -->
   <section class="questionnaire">
     <h2 style="text-align:center">📬 A Little Questionnaire 📬</h2>
@@ -185,20 +432,71 @@
 
       <textarea name="favorite_memory" rows="4" placeholder="What’s your favorite memory from our first 6 months together?" required></textarea>
       <textarea name="most_romantic" rows="4" placeholder="What’s the most romantic thing we’ve done together?" required></textarea>
-      <textarea name="next_6_months" rows="4" placeholder="What’s something you want us to do in the next 6 months?" required></textarea>
 
-      <label>Will you be my date for our 1-year anniversary?</label>
-      <label><input type="radio" name="anniversary_date" value="Yes" required> Yes</label>
-      <label><input type="radio" name="anniversary_date" value="No"> No</label>
+      <label>Will you be my valentine?</label>
+      <label><input type="checkbox" name="valentine_date" value="Yes" required> Yes</label>
+      <label id="noOption" class="escaping-label">
+        <input type="checkbox" tabindex="-1" name="valentine_date" value="No"> No
+      </label>
 
       <label>You know I'm always with youu!</label>
       <label><input type="radio" name="always_with_you" value="ik bub" required> ik bub</label>
       <label><input type="radio" name="always_with_you" value="yess ofc"> yess ofc</label>
 
+      <label>I love you bub</label>
+      <label><input type="checkbox" name="love_response" value="I love you too"> I love you too</label>
+      <label><input type="checkbox" name="love_response" value="i love you moree"> i love you moree</label>
+      <label id="noLoveOption" class="escaping-label">
+        <input type="checkbox" tabindex="-1" name="love_response" value="No i don't"> No i don't
+      </label>
+
       <button type="submit">Send Response</button>
     </form>
     <p style="text-align:center; margin-top:1rem; font-weight:bold; color:#d63384">Lots of love for sending your response! 💕</p>
+    <p style="text-align:center; margin-top:1rem; font-weight:bold; color:#d63384">I LOVE YOUU more than anything</p>
   </section>
+
+  <script>
+    // Escaping "No" option logic for valentine
+    (function() {
+      const noOption = document.getElementById('noOption');
+      let moveCount = 0;
+      noOption.addEventListener('mouseenter', () => {
+        const maxMove = 120;
+        const randomX = Math.floor(Math.random() * maxMove) - maxMove/2;
+        const randomY = Math.floor(Math.random() * maxMove) - maxMove/2;
+        noOption.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        moveCount++;
+        if(moveCount > 10) noOption.style.transition = 'none';
+      });
+      noOption.addEventListener('mouseleave', () => {
+        noOption.style.transform = 'translate(0, 0)';
+        noOption.style.transition = 'transform 0.2s';
+      });
+      // This also disables any click potential, as a fallback
+      noOption.addEventListener('click', e => e.preventDefault());
+    })();
+
+    // Escaping "No i don't" option logic for new question
+    (function() {
+      const noLoveOption = document.getElementById('noLoveOption');
+      let moveCount = 0;
+      noLoveOption.addEventListener('mouseenter', () => {
+        const maxMove = 120;
+        const randomX = Math.floor(Math.random() * maxMove) - maxMove/2;
+        const randomY = Math.floor(Math.random() * maxMove) - maxMove/2;
+        noLoveOption.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        moveCount++;
+        if(moveCount > 10) noLoveOption.style.transition = 'none';
+      });
+      noLoveOption.addEventListener('mouseleave', () => {
+        noLoveOption.style.transform = 'translate(0, 0)';
+        noLoveOption.style.transition = 'transform 0.2s';
+      });
+      // This also disables any click potential, as a fallback
+      noLoveOption.addEventListener('click', e => e.preventDefault());
+    })();
+  </script>
 
   <!-- Footer -->
   <footer>
